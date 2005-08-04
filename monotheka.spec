@@ -8,9 +8,12 @@ Group:		X11/Applications
 Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALPHA/%{name}-%{version}.tar.gz
 # Source0-md5:	2997b9e7e97feb4c249f0b72c6baaa4c
 URL:		http://monotheka.mdk.org.pl/
+Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
+Requires:	mono >= 1.0.6
+Requires:	sqlite >= 2.8
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono >= 1.0.6
-BuildRequires:	sqlite >= 2.8
+BuildRequires:	sqlite-devel >= 2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
