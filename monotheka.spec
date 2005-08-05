@@ -9,6 +9,7 @@ Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALP
 # Source0-md5:	2997b9e7e97feb4c249f0b72c6baaa4c
 Patch0:		%{name}-avi-title.patch
 Patch1:		%{name}-imdb-shell.patch
+Patch2:		%{name}-avi-close.patch
 URL:		http://monotheka.mdk.org.pl/
 Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
 Requires:	mono >= 1.0.6
@@ -76,6 +77,7 @@ Aktualne mo¿liwo¶ci:
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 sed -i -e 's@#/bin/bash@#!/bin/bash@' configure
 sed -i -e 's@#/bin/bash@#!/bin/sh@' System/monotheka.in
