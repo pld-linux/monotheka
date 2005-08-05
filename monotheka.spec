@@ -12,7 +12,7 @@ Patch1:		%{name}-imdb-shell.patch
 Patch2:		%{name}-avi-close.patch
 URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
-BuildRequires:	mono >= 1.0.6
+BuildRequires:	mono-csharp >= 1.0.6
 BuildRequires:	sqlite-devel >= 2.8
 Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
 Requires:	mono >= 1.0.6
