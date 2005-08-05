@@ -11,12 +11,12 @@ Patch0:		%{name}-avi-title.patch
 Patch1:		%{name}-imdb-shell.patch
 Patch2:		%{name}-avi-close.patch
 URL:		http://monotheka.mdk.org.pl/
-Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
-Requires:	mono >= 1.0.6
-Requires:	sqlite >= 2.8
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono >= 1.0.6
 BuildRequires:	sqlite-devel >= 2.8
+Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
+Requires:	mono >= 1.0.6
+Requires:	sqlite >= 2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -52,7 +52,7 @@ aplikacji dla kolekcjonerów filmów integruj±cej siê ze ¶rodowiskiem
 GNOME, pozostaj±cej jednocze¶nie prost± i ³atw± do u¿ycia.
 
 By to osi±gn±æ, dostarczany jest kompletny interfejs wtyczek. Wtyczki
-s± odpowiedzialne za import/export kolekcji, jak te¿ za automatyczne
+s± odpowiedzialne za import/eksport kolekcji, jak te¿ za automatyczne
 wype³nianie informacji o filmach z zewnêtrznych ¼róde³ (IMDB, FilmWeb)
 w celu przyspieszenia katalogowania filmów.
 
