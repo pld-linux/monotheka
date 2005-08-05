@@ -1,0 +1,27 @@
+diff -ruN monotheka-0.0.5./Plugins/AVIGet/AVIGet.cs monotheka-0.0.5/Plugins/AVIGet/AVIGet.cs
+--- monotheka-0.0.5./Plugins/AVIGet/AVIGet.cs	2005-08-04 23:27:08.000000000 +0200
++++ monotheka-0.0.5/Plugins/AVIGet/AVIGet.cs	2005-08-05 01:50:42.568393456 +0200
+@@ -68,6 +68,7 @@
+                 // RIFF stuff
+                 RIFFReader __RR = new RIFFReader(__AVILocation.GetResult());
+                 __RR.Run();
++                __RR.Close();
+ 
+                 // If movie title is empty, set it to filename
+                 Movie __M = __RR.GetMovie();
+diff -ruN monotheka-0.0.5./Plugins/AVIGet/RIFFReader.cs monotheka-0.0.5/Plugins/AVIGet/RIFFReader.cs
+--- monotheka-0.0.5./Plugins/AVIGet/RIFFReader.cs	2005-04-09 01:10:53.000000000 +0200
++++ monotheka-0.0.5/Plugins/AVIGet/RIFFReader.cs	2005-08-05 01:50:34.603604288 +0200
+@@ -223,6 +223,12 @@
+ 
+     }
+ 
++
++    public void Close()
++    {
++        FS.Close();
++    }
++    
+     
+     /* Fill the movie with acquired data... */
+     public Movie GetMovie()
