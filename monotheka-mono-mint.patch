@@ -1,0 +1,8 @@
+--- ./monoboil.config~	2005-05-13 16:49:15.000000000 +0200
++++ ./monoboil.config	2005-08-07 22:52:48.000000000 +0200
+@@ -1,4 +1,4 @@
+ BOIL_SOFTWARE="Monotheka"
+ BOIL_VERSION="0.0.5"
+ BOIL_CODENAME="Use me, I'm yours"
+-BOIL_DEPENDENCIES_PKG="mono-1.0.6 gtk-sharp-1.0.4 glade-sharp-1.0.4 gnome-sharp-1.0.4 gconf-sharp-1.0.4 sqlite-2.8"
++BOIL_DEPENDENCIES_PKG="mint-1.0.6 gtk-sharp-1.0.4 glade-sharp-1.0.4 gnome-sharp-1.0.4 gconf-sharp-1.0.4 sqlite-2.8"
