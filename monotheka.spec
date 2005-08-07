@@ -10,6 +10,8 @@ Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALP
 Patch0:		%{name}-avi-title.patch
 Patch1:		%{name}-imdb-shell.patch
 Patch2:		%{name}-avi-close.patch
+# TODO check this, no idea what is the original reason!
+Patch3:		%{name}-mono-mint.patch
 URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
@@ -78,6 +80,7 @@ Aktualne mo¿liwo¶ci:
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 sed -i -e 's@#/bin/bash@#!/bin/bash@' configure
 sed -i -e 's@#/bin/bash@#!/bin/sh@' System/monotheka.in
@@ -94,6 +97,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# TODO check this!
+if [ %{_lib} = lib64 ]; then
+	mv $RPM_BUILD_ROOT{%{_prefix}/lib,%{_libdir}}
+fi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
