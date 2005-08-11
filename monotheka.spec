@@ -17,7 +17,7 @@ URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
 BuildRequires:	sqlite-devel >= 2.8
-BuildRequires:	rpm-build >= 4.4.2-0.3
+BuildRequires:	rpmbuild(monoautodeps)
 Requires:	sqlite >= 2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
