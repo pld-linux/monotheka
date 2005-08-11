@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.mono
 Summary:	Simple application to organize and keep track of your movie catalogue
 Summary(pl):	Prosta aplikacja organizuj±ca i zarz±dzaj±ca katalogiem filmów
 Name:		monotheka
@@ -16,8 +17,7 @@ URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
 BuildRequires:	sqlite-devel >= 2.8
-Requires:	dotnet-gtk-sharp-gnome >= 1.0.4
-Requires:	mono >= 1.0.6
+BuildRequires:	rpm-build >= 4.4.2-0.3
 Requires:	sqlite >= 2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
