@@ -2,17 +2,14 @@
 Summary:	Simple application to organize and keep track of your movie catalogue
 Summary(pl):	Prosta aplikacja organizuj±ca i zarz±dzaj±ca katalogiem filmów
 Name:		monotheka
-Version:	0.0.5
+Version:	0.0.6
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALPHA/%{name}-%{version}.tar.gz
-# Source0-md5:	2997b9e7e97feb4c249f0b72c6baaa4c
-Patch0:		%{name}-avi-title.patch
-Patch1:		%{name}-imdb-shell.patch
-Patch2:		%{name}-avi-close.patch
+# Source0-md5:	80c4ea1288dc0f98623f52d6beddd8bd
 # TODO check this, no idea what is the original reason!
-Patch3:		%{name}-mono-mint.patch
+Patch0:		%{name}-mono-mint.patch
 URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
@@ -78,12 +75,6 @@ Aktualne mo¿liwo¶ci:
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-
-sed -i -e 's@#/bin/bash@#!/bin/bash@' configure
-sed -i -e 's@#/bin/bash@#!/bin/sh@' System/monotheka.in
 
 %build
 ./configure \
