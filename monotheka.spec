@@ -10,6 +10,7 @@ Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALP
 # Source0-md5:	80c4ea1288dc0f98623f52d6beddd8bd
 # TODO check this, no idea what is the original reason!
 Patch0:		%{name}-mono-mint.patch
+Patch1:		%{name}-MovieDatabase.patch
 URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
@@ -75,6 +76,7 @@ Aktualne mo¿liwo¶ci:
 %prep
 %setup -q
 %patch0 -p1
+%patch1	-p1
 
 %build
 ./configure \
