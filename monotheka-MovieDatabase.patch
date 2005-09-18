@@ -1,0 +1,11 @@
+--- monotheka-0.0.6/MovieDatabase/MovieDatabase.cs.orig	2005-09-18 11:40:02.000000000 +0200
++++ monotheka-0.0.6/MovieDatabase/MovieDatabase.cs	2005-09-18 11:40:24.000000000 +0200
+@@ -339,7 +339,7 @@
+             if (!FreshDatabase) {
+                 
+                 // We need to upgrade...
+-                DBInfo __DBInfo;
++                DBInfo __DBInfo = new DBInfo();
+                 try {
+                     __DBInfo = GetDBInfo();
+                 } catch {
