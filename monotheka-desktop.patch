@@ -1,0 +1,18 @@
+diff -urN monotheka-0.0.6.orig/System/monotheka.desktop.in monotheka-0.0.6/System/monotheka.desktop.in
+--- monotheka-0.0.6.orig/System/monotheka.desktop.in	2005-09-18 11:24:18.879587536 +0200
++++ monotheka-0.0.6/System/monotheka.desktop.in	2005-09-18 11:27:13.621022800 +0200
+@@ -1,10 +1,12 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=Monotheka
+ Comment=DivX/DVD movie database
+ Comment[hu]=DivX/DVD filmadatbázis
++Comment[pl]=Baza filmów DivX/DVD
+ Exec=@BOIL_BINDIR@/monotheka
+ Icon=@BOIL_DATADIR@/pixmaps/monotheka.png
+ Terminal=false
+ Type=Application
+-Categories=Application;AudioVideo;AudioVideoEditing;
+-
++Categories=GTK;GNOME;AudioVideo;AudioVideoEditing;
++# vi: encoding=utf-8
