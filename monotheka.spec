@@ -3,7 +3,7 @@ Summary:	Simple application to organize and keep track of your movie catalogue
 Summary(pl):	Prosta aplikacja organizuj±ca i zarz±dzaj±ca katalogiem filmów
 Name:		monotheka
 Version:	0.0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALPHA/%{name}-%{version}.tar.gz
@@ -11,6 +11,7 @@ Source0:	http://forge.novell.com/modules/xfcontent/private.php/monotheka/0.1-ALP
 # TODO check this, no idea what is the original reason!
 Patch0:		%{name}-mono-mint.patch
 Patch1:		%{name}-MovieDatabase.patch
+Patch2:		%{name}-desktop.patch
 URL:		http://monotheka.mdk.org.pl/
 BuildRequires:	dotnet-gtk-sharp-gnome-devel >= 1.0.4
 BuildRequires:	mono-csharp >= 1.0.6
@@ -76,7 +77,8 @@ Aktualne mo¿liwo¶ci:
 %prep
 %setup -q
 %patch0 -p1
-%patch1	-p1
+%patch1 -p1
+%patch2 -p1
 
 %build
 ./configure \
