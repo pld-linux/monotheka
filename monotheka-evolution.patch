@@ -1,0 +1,11 @@
+--- monotheka-0.0.6/Plugins/TXTExport/MailToEvolution.cs~	2005-05-07 11:20:00.000000000 +0000
++++ monotheka-0.0.6/Plugins/TXTExport/MailToEvolution.cs	2006-03-18 19:13:32.000000000 +0000
+@@ -162,7 +162,7 @@
+                 try {
+                     System.Diagnostics.Process proc = new System.Diagnostics.Process(); 
+                     proc.EnableRaisingEvents = false; 
+-                    proc.StartInfo.FileName = "evolution-2.2"; 
++                    proc.StartInfo.FileName = "evolution"; 
+                     proc.StartInfo.Arguments = "\"mailto:?body=" + __CreatedFileContents + "\"";
+                     proc.Start(); 
+                     // FIXME We need to check if evolution was actually started
