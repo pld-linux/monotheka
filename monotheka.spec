@@ -110,4 +110,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/Monotheka
 %{_pkgconfigdir}/*
 %{_pixmapsdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
