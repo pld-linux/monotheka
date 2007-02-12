@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.mono
 Summary:	Simple application to organize and keep track of your movie catalogue
-Summary(pl):	Prosta aplikacja organizuj±ca i zarz±dzaj±ca katalogiem filmów
+Summary(pl.UTF-8):   Prosta aplikacja organizujÄ…ca i zarzÄ…dzajÄ…ca katalogiem filmÃ³w
 Name:		monotheka
 Version:	0.0.6
 Release:	3
@@ -48,32 +48,32 @@ Current Features:
   overborrowed)
 - Borrowers management
 
-%description -l pl
-Zamys³em jest stworzenie najbardziej seksownej i pe³nej mo¿liwo¶ci
-aplikacji dla kolekcjonerów filmów integruj±cej siê ze ¶rodowiskiem
-GNOME, pozostaj±cej jednocze¶nie prost± i ³atw± do u¿ycia.
+%description -l pl.UTF-8
+ZamysÅ‚em jest stworzenie najbardziej seksownej i peÅ‚nej moÅ¼liwoÅ›ci
+aplikacji dla kolekcjonerÃ³w filmÃ³w integrujÄ…cej siÄ™ ze Å›rodowiskiem
+GNOME, pozostajÄ…cej jednoczeÅ›nie prostÄ… i Å‚atwÄ… do uÅ¼ycia.
 
-By to osi±gn±æ, dostarczany jest kompletny interfejs wtyczek. Wtyczki
-s± odpowiedzialne za import/eksport kolekcji, jak te¿ za automatyczne
-wype³nianie informacji o filmach z zewnêtrznych ¼róde³ (IMDB, FilmWeb)
-w celu przyspieszenia katalogowania filmów.
+By to osiÄ…gnÄ…Ä‡, dostarczany jest kompletny interfejs wtyczek. Wtyczki
+sÄ… odpowiedzialne za import/eksport kolekcji, jak teÅ¼ za automatyczne
+wypeÅ‚nianie informacji o filmach z zewnÄ™trznych ÅºrÃ³deÅ‚ (IMDB, FilmWeb)
+w celu przyspieszenia katalogowania filmÃ³w.
 
-Aktualne mo¿liwo¶ci:
-- dodawanie/edycja/usuwanie filmów,
-- przeszukiwanie bazy danych w celu znalezienia filmów danego
-  re¿ysera, filmów powsta³ych w danym roku, itp.,
-- konfigurowalny wygl±d,
+Aktualne moÅ¼liwoÅ›ci:
+- dodawanie/edycja/usuwanie filmÃ³w,
+- przeszukiwanie bazy danych w celu znalezienia filmÃ³w danego
+  reÅ¼ysera, filmÃ³w powstaÅ‚ych w danym roku, itp.,
+- konfigurowalny wyglÄ…d,
 - interfejs wtyczek do importowania danych,
 - interfejs wtyczek do eksportowania danych,
-- interfejs wtyczek do automatycznego uzupe³niania informacji z
-  zewnêtrznych ¼róde³,
-- inteligentny system pamiêtania warto¶ci. Pamiêtane jest, co zosta³o
-  wpisane w ró¿ne okna dialogowe,
-- oznaczanie filmów w kolekcji (rzadkie, uszkodzona p³yta, potrzebna
+- interfejs wtyczek do automatycznego uzupeÅ‚niania informacji z
+  zewnÄ™trznych ÅºrÃ³deÅ‚,
+- inteligentny system pamiÄ™tania wartoÅ›ci. PamiÄ™tane jest, co zostaÅ‚o
+  wpisane w rÃ³Å¼ne okna dialogowe,
+- oznaczanie filmÃ³w w kolekcji (rzadkie, uszkodzona pÅ‚yta, potrzebna
   kopia, itp.),
-- oznaczanie filmów ró¿nymi kolorami (nowe, po¿yczone,
+- oznaczanie filmÃ³w rÃ³Å¼nymi kolorami (nowe, poÅ¼yczone,
   przetrzymywane),
-- zarz±dzanie po¿yczaj±cymi.
+- zarzÄ…dzanie poÅ¼yczajÄ…cymi.
 
 %prep
 %setup -q
