@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.mono
 Summary:	Simple application to organize and keep track of your movie catalogue
-Summary(pl.UTF-8):   Prosta aplikacja organizująca i zarządzająca katalogiem filmów
+Summary(pl.UTF-8):	Prosta aplikacja organizująca i zarządzająca katalogiem filmów
 Name:		monotheka
 Version:	0.0.6
 Release:	3
